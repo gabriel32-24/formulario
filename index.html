@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EP3-Gabriel</title>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css"rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="fondogrande">
+    <img class="logo" src="./img/logo mando gabriel.png" alt="login">
+  <section class="formulario">
+    <h1 class="titulo">Regístrate</h1>
+    <form action="datos.php" method=get>
+      <div class="input-box">
+        <label for="email">Correo electronico</label>
+        <br>
+        <input type="email" placeholder="ejemplo@gmail.com" required name="email" id="email">
+      </div>
+      <div class="input-box">
+        <label for="password">Contraseña</label>
+        <br>
+        <input type="password" placeholder="Mínimo seis (6)caracteres"required name="password" minlength="6" maxlength="12" >
+      </div>
+      </div>
+      <div class="input-box">
+        <label for="password">Repetir contraseña</label>
+        <br>
+        <input type="password" placeholder="Repetir contraseña" required name="password" minlength="6" maxlength="12" >
+      </div>
+      <div class="input-box">
+        <label for="nombre">Nombre de usuario</label>
+        <br>
+        <input type="text" placeholder="Indique su nombre" required name="nombre"  minlength="3" >
+      </div>
+      <div class="checkbox">
+        <br>
+        <label for="checkbox">
+          <input type="checkbox" required>Acepto</label>
+        <a href="#">los términos y condiciones</a>
+      </div>
+      <br>
+      <div class="iniciarsesion">
+        <button class="btregisro" type="submit">Registrarme</button>
+        <button class="btinicio" type="submit">Ya poseo una cuenta</button>
+      </div>
+    </form>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
+
